@@ -7,13 +7,25 @@
     
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+  }
 
 body {
     font-size: $font-size;
     font-family: $font-barlow;
-    line-height: 1.6;
+    line-height: 1.6;   
     font-size: 18px;
 }
+
 
 .showcase {
     height: 100vh;
@@ -35,13 +47,11 @@ body {
 
     ul {
         display: flex;
-        list-style-type: none;
 
         li {
             padding: 15px;
 
             a {
-                text-decoration: none;
                 color: $white;
             }
         }
@@ -53,6 +63,10 @@ body {
             text-transform: uppercase;
             padding: 1rem 2rem;
             border-radius: 30px
+        }
+
+        li:last-child a:hover {
+            color: $white;
         }
     }
 
@@ -78,4 +92,177 @@ body {
         transform: translate(-50%, -50%);
     
     }
+}
+
+.boxes {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    color: $dark-desaturated-cyan;
+
+    .box-text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        padding: 0 150px;
+
+        h1 {
+            font-size: 2.7rem;
+            line-height: 1.2;
+            font-family: $font-fraunces;
+            font-weight: 900;
+            color: $very-dark-desaturated-blue;
+        }
+
+        p {
+            color: $dark-grayish-blue;
+        }
+        
+        a {
+            color: $very-dark-desaturated-blue;
+            text-transform: uppercase;
+            font-family: $font-fraunces;
+        }
+    }
+
+    .box-img {
+        img {
+            width: 100%;
+            height: 100%;
+        }      
+    }
+
+    .relative {
+        position: relative;
+    
+        .img-text {
+            position: absolute;
+            text-align: center;
+            width: 50%;
+            top: 65%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            h3 {
+                font-family: $font-fraunces;
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.testimonials {
+    height: 70vh;
+    display: grid;
+    grid-template: 20% 1fr / repeat(3, 1fr);
+    // gap: 50px;
+    margin: 80px 0;
+
+
+    .testimonials-heading {
+        grid-column: 1 / 4;
+        display: grid;
+        align-self: center;
+        justify-items: center;
+        font-family: $font-fraunces;
+        text-transform: uppercase;
+        color: $grayish-blue;
+        letter-spacing: 3px;
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
+        justify-self: center;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+        max-width: 80%;
+      
+
+        img {
+            width: 80px ;
+            border-radius: 50%;
+        }
+
+        p {
+            color: $very-dark-grayish-blue;
+            flex: 2;
+        }
+
+        .name h4 {
+            font-family: $font-fraunces;
+            color: $very-dark-desaturated-blue;
+        }
+
+        .name small {
+            color: $grayish-blue;
+        }
+
+    }
+
+}
+
+.four-images {
+    display: flex;
+    // height: 50vh;
+
+    img {
+        height: 100%;
+    }
+}
+
+
+
+// Footer
+
+.footer {
+    background-color: $dark-moderate-cyan;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo {
+            margin-top: 60px;
+         img {
+            width: 180px;
+        }
+    }
+
+
+
+    .links {
+        ul {
+            display: flex;
+            li {
+                margin: 0 20px;
+                a{
+                    color: $dark-desaturated-cyan;
+                }
+            }
+        }
+    }
+
+    .social {
+        a {
+            margin: 15px;
+        }
+    }
+
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    
 }

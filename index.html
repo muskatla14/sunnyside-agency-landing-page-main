@@ -15,15 +15,6 @@
     <title>Frontend Mentor | Sunnyside agency landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <header class="showcase">
@@ -43,8 +34,8 @@
       </div>
     </header>
     <section class="boxes">
-      <div class="box">
-        <h2>Transform your brand</h2>
+      <div class="box-text">
+        <h1>Transform your brand</h1>
         <p>
           We are a full-service creative agency specializing in helping brands
           grow fast. Engage your clients through compelling visuals that do most
@@ -52,14 +43,14 @@
         </p>
         <a href="#">Learn more</a>
       </div>
-      <div class="box">
+      <div class="box-img">
         <img src="./images/desktop/image-transform.jpg" alt="" />
       </div>
-      <div class="box">
+      <div class="box-img">
         <img src="./images/desktop/image-stand-out.jpg" alt="" />
       </div>
-      <div class="box">
-        <h2>Stand out to the right audience</h2>
+      <div class="box-text">
+        <h1>Stand out to the right audience</h1>
         <p>
           Using a collaborative formula of designers, researchers,
           photographers, videographers, and copywriters, we’ll build and extend
@@ -67,26 +58,33 @@
         </p>
         <a href="#">Learn more</a>
       </div>
-      <div class="box">
+      <div class="box-img relative">
         <img src="./images/desktop/image-graphic-design.jpg" alt="" />
-        <h3>Graphic design</h3>
-        <p>
-          Great design makes you memorable. We deliver artwork that underscores
-          your brand message and captures potential clients’ attention.
-        </p>
+        <div class="img-text">
+          <h3>Graphic design</h3>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
       </div>
-      <div class="box">
+      <div class="box-img relative">
         <img src="./images/desktop/image-photography.jpg" alt="" />
-        <h3>Photography</h3>
-        <p>
-          Increase your credibility by getting the most stunning, high-quality
-          photos that improve your business image.
-        </p>
+        <div class="img-text">
+          <h3>Photography</h3>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="testimonials">
-      <h3>Client Testimonials</h3>
+      <div class="testimonials-heading">
+        <h3>Client Testimonials</h3>
+      </div>
       <div class="testimonial">
         <img src="./images/image-emily.jpg" alt="" />
         <p>
@@ -123,10 +121,18 @@
     </section>
 
     <section class="four-images">
-      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" />
-      <img src="images/desktop/image-gallery-orange.jpg" alt="" />
-      <img src="images/desktop/image-gallery-cone.jpg" alt="" />
-      <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" />
+      <div class="four-images-img">
+        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" />
+      </div>
+      <div class="four-images-img">
+        <img src="images/desktop/image-gallery-orange.jpg" alt="" />
+      </div>
+      <div class="four-images-img">
+        <img src="images/desktop/image-gallery-cone.jpg" alt="" />
+      </div>
+      <div class="four-images-img">
+        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" />
+      </div>
     </section>
 
     <footer class="footer">
@@ -143,17 +149,20 @@
       </div>
 
       <div class="social">
-        <img src="./images/icon-facebook.svg" alt="" />
-        <img src="./images/icon-instagram.svg" alt="" />
-        <img src="./images/icon-twitter.svg" alt="" />
-        <img src="./images/icon-pinterest.svg" alt="" />
+        <a href=""><img src="./images/icon-facebook.svg" alt="" /></a>
+        <a href=""><img src="./images/icon-instagram.svg" alt="" /></a>
+        <a href=""> <img src="./images/icon-twitter.svg" alt="" /></a>
+        <a href=""> <img src="./images/icon-pinterest.svg" alt="" /></a>
       </div>
 
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/muskatla14"
+          >Marko Robovic</a
+        >.
       </div>
     </footer>
   </body>
