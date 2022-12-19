@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/muskatla14/sunnyside-agency-landing-page-main](https://github.com/muskatla14/sunnyside-agency-landing-page-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://muskatla14.github.io/sunnyside-agency-landing-page-main/](https://muskatla14.github.io/sunnyside-agency-landing-page-main/)
 
 ## My process
 
